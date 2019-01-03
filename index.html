@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <style>
+        .static {
+            cursor: not-allowed;
+        }
+
+        .draggable {
+            cursor: move;
+        }
+        #connection {
+  stroke-width: 1;
+  stroke: red;
+}
+    </style>
+    
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="10 10 1000 800" onload="makeDraggable(evt)">
+         <rect x="0" y="0" width="1000" height="800" fill="#fafafa" /> 
+        <rect x="40" y="50" width="200" height="200" id="rect1" fill="#007bff" class="draggable" />
+        <rect x="280" y="50" width="200" height="200"id="rect2" fill="#888" class="draggable" />
+        <line id="connection" />
+        <path
+        id="path6"
+        d="M0 0"    
+        stroke-width="10px"        style="stroke:#000; fill:none;" 
+/>
+<path d="M40,20  A30,30 0 0,0 70,70"
+    style="stroke: #cccc00; stroke-width:2; fill:none;"/>
+
+<path d="M40,20  A30,30 0 1,0 70,70"
+    style="stroke: #ff0000; stroke-width:2; fill:none;"/>
+<!-- <path id = "s3"
+ d = "M 60 0 L 120 0 L 180 60 L 180 120 L 120 180 L 60 180 L 0 120 L 0 60" fill = "green" stroke = "black" stroke-width = "3"/> -->
+    </svg>
+</body>
+<script src="./index.js"></script>
+</html>
